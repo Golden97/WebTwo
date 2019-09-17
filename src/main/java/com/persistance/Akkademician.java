@@ -9,7 +9,7 @@ package com.persistance;
  *
  * @author pluca
  */
-import com.sun.istack.internal.NotNull;
+
 import java.net.URL;
 import javax.persistence.Basic;
 import javax.persistence.Entity;
@@ -18,11 +18,18 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Lob;
+import javax.validation.constraints.NotNull;
 
 @Entity
 
 public class Akkademician {
 
+    public Akkademician() {
+     
+    }
+
+    
+    
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
